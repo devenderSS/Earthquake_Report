@@ -2,6 +2,7 @@ package com.example.dev.weatherapi;
 
 import android.content.AsyncTaskLoader;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
          et = (EditText)findViewById(R.id.editText);// refers to an editable text field
         Button bt = (Button)findViewById(R.id.button);
         bt.setOnClickListener(new View.OnClickListener() { // On clicking go button

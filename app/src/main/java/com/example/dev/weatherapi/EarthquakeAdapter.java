@@ -174,7 +174,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquakes>
                 magnitudeColorResourceId = R.color.magnitude9;
                 break;
             default:
-                magnitudeColorResourceId = R.color.magnitude10plus;
+                magnitudeColorResourceId = R.color.magnitude9;
                 break;
         }
 

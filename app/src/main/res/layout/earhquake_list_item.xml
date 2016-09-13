@@ -3,13 +3,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_height="120dp"
     android:orientation="horizontal"
-    android:paddingEnd="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingStart="16dp">
+    android:clipToPadding="false"
+    android:padding="16dp"
 
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow"
+        >
+
+   
     <TextView
         android:id="@+id/magnitude"
         android:layout_width="36dp"
@@ -20,7 +27,10 @@
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        tools:text="8.9" />
+        tools:text="8.9"
+        android:layout_margin="10dp"
+
+        />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -48,8 +58,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ellipsize="end"
+
             android:maxLines="2"
-            android:textColor="@color/textColorEarthquakeLocation"
+            android:textColor="@color/magnitude10"
             android:textSize="16sp"
             tools:text="Long placeholder location that should wrap to more than 2 lines of text" />
 
@@ -70,7 +81,8 @@
             android:layout_gravity="end"
             android:textColor="@color/textColorEarthquakeDetails"
             android:textSize="12sp"
-            tools:text="Mar 6, 2010" />
+            tools:text="Mar 6, 2010"
+            android:layout_margin="10dp"/>
 
         <TextView
             android:id="@+id/time"
@@ -79,7 +91,11 @@
             android:layout_gravity="end"
             android:textColor="@color/textColorEarthquakeDetails"
             android:textSize="12sp"
-            tools:text="3:00 PM" />
+            tools:text="3:00 PM"
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
+
+
